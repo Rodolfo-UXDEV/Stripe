@@ -64,7 +64,7 @@
         <div id="paymentSection">
             <h1>Acesso Exclusivo</h1>
             <p>Preencha os dados do seu cartão abaixo.</p>
-            <div class="price">R$ 1,00</div>
+            <div class="price">R$ 9,90</div>
             
             <form id="payment-form">
                 <div id="card-element"><!-- O Stripe Elements será inserido aqui --></div>
@@ -103,7 +103,7 @@
             // --- INICIALIZAÇÃO ---
             try {
                 // Pede ao nosso backend uma "intenção de pagamento"
-                const response = await fetch('https://rodolfo-uxdev.github.io/Stripe/create-payment-intent', {
+                const response = await fetch('http://localhost:3000/create-payment-intent', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                 });
